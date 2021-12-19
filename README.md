@@ -15,6 +15,8 @@ Planned features:
 - Connect the Journey assistant to Alexa
 - Easily load in new modules to the Journey assistant from a package-manager.
 
+# Project Architecture:
+![Project Architecture](/../main/docs/img/journey-project-architecture.png)
 
 # How to contribute?
 If you want to contribute in some of the features listed above, you can send in a pull request for it! If you're not sure where to start, just open a new issue and we'll point you in the right direction.
