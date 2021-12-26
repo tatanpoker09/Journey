@@ -19,7 +19,7 @@ def default(request, responder):
 
 
 @app.handle(intent='create_new_project')
-def craete_new_project(request, responder):
+def create_new_project(request, responder):
     active_programming_language = None
     programming_language_entity = next((e for e in request.entities if e['type'] == 'programming_language'), None)
     if programming_language_entity:
