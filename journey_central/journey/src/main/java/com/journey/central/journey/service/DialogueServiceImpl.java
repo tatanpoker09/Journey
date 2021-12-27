@@ -3,9 +3,11 @@ package com.journey.central.journey.service;
 import com.journey.central.journey.dao.DialogueRepository;
 import com.journey.central.journey.model.Dialogue;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.security.Principal;
 
+@Service
 public class DialogueServiceImpl implements DialogueService {
     @Autowired
     private DialogueRepository dialogueRepository;
@@ -28,6 +30,11 @@ public class DialogueServiceImpl implements DialogueService {
         } else {
             //return 403
         }
+    }
+
+    @Override
+    public void saveDialogue(Dialogue dialogue) {
+        dialogueRepository.save(dialogue);
     }
 
     @Override

@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(path = "/dialogue")
 public class DialogueController {
+
     @Autowired
     private DialogueService dialogueService;
 
     @PostMapping(path = "/")
-    public String dialogue(@ModelAttribute("dialogue") Dialogue dialogue) {
-        return dialogueService.save(dialogue);
+    public void dialogue(@ModelAttribute("dialogue") Dialogue dialogue) {
+        dialogueService.saveDialogue(dialogue);
     }
 }
