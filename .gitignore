@@ -238,7 +238,7 @@ journey_core_nlp/elasticsearch-7.8.0/*
 */.env
 journey_speech/__pycache__/
 journey_speech/.env
-journey_speech/treeassistant.json
+journey_speech/treeassistant-tatan.json
 lib/
 log/
 venv/
