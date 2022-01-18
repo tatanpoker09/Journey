@@ -1,0 +1,40 @@
+{
+    "name": "Youtube Music Player",
+    "version": "1.0",
+    "author": "tatanpoker09",
+    "description": "Youtube Music Player",
+    "methods": [
+        {
+            "triggers":[
+                {
+                    "domain": "media",
+                    "intent": "play_song"
+                }
+            ],
+            "destroy_triggers":[
+                {
+                    "domain": "media",
+                    "intent": "stop_song"
+                },
+                {
+                    "domain": "common",
+                    "intent": "stop_common"
+                }
+            ],
+            "entities": ["song_name"],
+            "parameters": ["{song_name}", "false"],
+            "file_name": "play_song.py"
+        },
+        {
+            "triggers":[
+                {
+                    "domain": "media",
+                    "intent": "play_video"
+                }
+            ],
+            "entities": ["song_name"],
+            "parameters": ["{song_name}", "true"],
+            "file_name": "play_song.py"
+        }
+    ]
+}

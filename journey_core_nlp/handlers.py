@@ -1,4 +1,4 @@
-from .root import app
+from root import app
 
 
 @app.handle(intent='greet')
@@ -9,6 +9,14 @@ def welcome(request, responder):
     except KeyError:
         prefix = 'Hello. '
     responder.reply(f'{prefix}What can I help you with today?')
+    responder.listen()
+
+
+@app.handle(intent='play_song')
+def play_song(request, responder):
+    song_name = next((e for e in request.entities if e['type'] == 'song_name'), None)
+    print(song_name['text'])
+    responder.reply('Playing song...'+song_name['text'])
     responder.listen()
 
 
