@@ -1,1 +1,2 @@
+scipy
 mindmeld==4.2.9

@@ -1,0 +1,3 @@
+pafy
+vlc
+pyyoutube

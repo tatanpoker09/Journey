@@ -1,0 +1,1029 @@
+Play song {All star|song_name}
+Play song {Summer paradise|song_name}
+Play {All star|song_name}
+Play {rock or bust|song_name}
+Play {Summer paradise|song_name}
+Play {Hey princess|song_name}
+Play song {I need your love|song_name}
+Play {All star|song_name}
+Play {rock or bust|song_name}
+Play {Summer paradise|song_name}
+Play {Hey princess|song_name}
+Play song {rock or bust|song_name}
+Play song {Summer paradise|song_name}
+Play song {Hey princess|song_name}
+Play song {All star|song_name}
+Play song {Welcome to the black parade|song_name}
+Play {This is my biome|song_name}
+Play song {power of love|song_name}
+Play song {Above And Beyond (The Call Of Love)|song_name}
+play {Above And Beyond (The Call Of Love)|song_name}
+Play song {AC/DC Current|song_name}
+play {AC/DC Current|song_name}
+Play song {Acadian Driftwood|song_name}
+play {Acadian Driftwood|song_name}
+Play song {Ac-Cent-Tchu-Ate The Positive|song_name}
+play {Ac-Cent-Tchu-Ate The Positive|song_name}
+Play song {Accident In Paradise  An|song_name}
+play {Accident In Paradise  An|song_name}
+Play song {Ace Of Spades|song_name}
+play {Ace Of Spades|song_name}
+Play song {Acid Tracks|song_name}
+play {Acid Tracks|song_name}
+Play song {Acperience|song_name}
+play {Acperience|song_name}
+Play song {Acquiesce|song_name}
+play {Acquiesce|song_name}
+Play song {Across The Universe|song_name}
+play {Across The Universe|song_name}
+Play song {Act Naturally|song_name}
+play {Act Naturally|song_name}
+Play song {Action Satisfaction|song_name}
+play {Action Satisfaction|song_name}
+Play song {Addicted To Love|song_name}
+play {Addicted To Love|song_name}
+Play song {Adventures Of Grandmaster Flash On The Wheels Of Steel  The|song_name}
+play {Adventures Of Grandmaster Flash On The Wheels Of Steel  The|song_name}
+Play song {Africa|song_name}
+play {Africa|song_name}
+Play song {Afro Puffs|song_name}
+play {Afro Puffs|song_name}
+Play song {After Hours|song_name}
+play {After Hours|song_name}
+Play song {After Hours|song_name}
+play {After Hours|song_name}
+Play song {After Midnight|song_name}
+play {After Midnight|song_name}
+Play song {After The Gold Rush|song_name}
+play {After The Gold Rush|song_name}
+Play song {After You've Gone|song_name}
+play {After You've Gone|song_name}
+Play song {Aftermath|song_name}
+play {Aftermath|song_name}
+Play song {Against All Odds (Take A Look At Me Now)|song_name}
+play {Against All Odds (Take A Look At Me Now)|song_name}
+Play song {Agua De Beber (Water To Drink)|song_name}
+play {Agua De Beber (Water To Drink)|song_name}
+Play song {Ah! Sweet Mystery Of Life|song_name}
+play {Ah! Sweet Mystery Of Life|song_name}
+Play song {Ahead By A Century|song_name}
+play {Ahead By A Century|song_name}
+Play song {Ain't It A Shame (aka Ain't That A Shame)|song_name}
+play {Ain't It A Shame (aka Ain't That A Shame)|song_name}
+Play song {Ain't Life A Brook|song_name}
+play {Ain't Life A Brook|song_name}
+Play song {Ain't Misbehavin'|song_name}
+play {Ain't Misbehavin'|song_name}
+Play song {Ain't No Cure For Love|song_name}
+play {Ain't No Cure For Love|song_name}
+Play song {Ain't No Half Steppin'|song_name}
+play {Ain't No Half Steppin'|song_name}
+Play song {Ain't No Mountain High Enough|song_name}
+play {Ain't No Mountain High Enough|song_name}
+Play song {Ain't No Sunshine (When She's Gone)|song_name}
+play {Ain't No Sunshine (When She's Gone)|song_name}
+Play song {Ain't Nobody|song_name}
+play {Ain't Nobody|song_name}
+Play song {Ain't Nobody Here But Us Chickens|song_name}
+play {Ain't Nobody Here But Us Chickens|song_name}
+Play song {Ain't Nothin' Goin On But The Rent|song_name}
+play {Ain't Nothin' Goin On But The Rent|song_name}
+Play song {Ain't She Sweet|song_name}
+play {Ain't She Sweet|song_name}
+Play song {Ain't Talkin' 'Bout Love|song_name}
+play {Ain't Talkin' 'Bout Love|song_name}
+Play song {Ain't That Just Like A Woman|song_name}
+play {Ain't That Just Like A Woman|song_name}
+Play song {Ain't That Lonely Yet|song_name}
+play {Ain't That Lonely Yet|song_name}
+Play song {Ain't That Peculiar|song_name}
+play {Ain't That Peculiar|song_name}
+Play song {Ain't Too Proud To Beg|song_name}
+play {Ain't Too Proud To Beg|song_name}
+Play song {Ain't We Got Fun|song_name}
+play {Ain't We Got Fun|song_name}
+Play song {Air|song_name}
+play {Air|song_name}
+Play song {Air Mail Special|song_name}
+play {Air Mail Special|song_name}
+Play song {Al Capone|song_name}
+play {Al Capone|song_name}
+Play song {Alabama|song_name}
+play {Alabama|song_name}
+Play song {Alabama Jubilee|song_name}
+play {Alabama Jubilee|song_name}
+Play song {Alabama Song (Whisky Bar)|song_name}
+play {Alabama Song (Whisky Bar)|song_name}
+Play song {Alabamy Bound|song_name}
+play {Alabamy Bound|song_name}
+Play song {Albert Flasher|song_name}
+play {Albert Flasher|song_name}
+Play song {Alberta's Child|song_name}
+play {Alberta's Child|song_name}
+Play song {Alexander's Ragtime Band|song_name}
+play {Alexander's Ragtime Band|song_name}
+Play song {Alfie|song_name}
+play {Alfie|song_name}
+Play song {Alice Blue Gown|song_name}
+play {Alice Blue Gown|song_name}
+Play song {Alice's Restaurant Massacree|song_name}
+play {Alice's Restaurant Massacree|song_name}
+Play song {Alifib/Alfie|song_name}
+play {Alifib/Alfie|song_name}
+Play song {Alison|song_name}
+play {Alison|song_name}
+Play song {Alive|song_name}
+play {Alive|song_name}
+Play song {All Alone|song_name}
+play {All Alone|song_name}
+Play song {All Along The Watchtower|song_name}
+play {All Along The Watchtower|song_name}
+Play song {All Apologies|song_name}
+play {All Apologies|song_name}
+Play song {All Around The World|song_name}
+play {All Around The World|song_name}
+Play song {All Around The World|song_name}
+play {All Around The World|song_name}
+Play song {All Around The World (aka Grits Ain't Groceries)|song_name}
+play {All Around The World (aka Grits Ain't Groceries)|song_name}
+Play song {All Blues|song_name}
+play {All Blues|song_name}
+Play song {All By Myself|song_name}
+play {All By Myself|song_name}
+Play song {All Day And All Of The Night|song_name}
+play {All Day And All Of The Night|song_name}
+Play song {All I Do Is Dream Of You|song_name}
+play {All I Do Is Dream Of You|song_name}
+Play song {All I Have Is Love|song_name}
+play {All I Have Is Love|song_name}
+Play song {All I Have To Do Is Dream|song_name}
+play {All I Have To Do Is Dream|song_name}
+Play song {All I Really Want To Do|song_name}
+play {All I Really Want To Do|song_name}
+Play song {All I Wanna Do|song_name}
+play {All I Wanna Do|song_name}
+Play song {All I Want|song_name}
+play {All I Want|song_name}
+Play song {All My Ex's Live In Texas|song_name}
+play {All My Ex's Live In Texas|song_name}
+Play song {All Night Long|song_name}
+play {All Night Long|song_name}
+Play song {All Of Me|song_name}
+play {All Of Me|song_name}
+Play song {All Or Nothing At All|song_name}
+play {All Or Nothing At All|song_name}
+Play song {All Right Now|song_name}
+play {All Right Now|song_name}
+Play song {All Shook Up|song_name}
+play {All Shook Up|song_name}
+Play song {All That I Can Say|song_name}
+play {All That I Can Say|song_name}
+Play song {All The Best|song_name}
+play {All The Best|song_name}
+Play song {All The Gold In California|song_name}
+play {All The Gold In California|song_name}
+Play song {All The Lovely Ladies|song_name}
+play {All The Lovely Ladies|song_name}
+Play song {All The Things You Are|song_name}
+play {All The Things You Are|song_name}
+Play song {All The Way|song_name}
+play {All The Way|song_name}
+Play song {All The Young Dudes|song_name}
+play {All The Young Dudes|song_name}
+Play song {All Things Dull And Ugly|song_name}
+play {All Things Dull And Ugly|song_name}
+Play song {All Tomorrow's Parties|song_name}
+play {All Tomorrow's Parties|song_name}
+Play song {All You Need Is Love|song_name}
+play {All You Need Is Love|song_name}
+Play song {All Your Love|song_name}
+play {All Your Love|song_name}
+Play song {All Your Love (I Miss Loving)|song_name}
+play {All Your Love (I Miss Loving)|song_name}
+Play song {Almost Independence Day|song_name}
+play {Almost Independence Day|song_name}
+Play song {Almost Persuaded|song_name}
+play {Almost Persuaded|song_name}
+Play song {Alone And Forsaken|song_name}
+play {Alone And Forsaken|song_name}
+Play song {Along Came Betty|song_name}
+play {Along Came Betty|song_name}
+Play song {Alright|song_name}
+play {Alright|song_name}
+Play song {Alright  Okay  You Win|song_name}
+play {Alright  Okay  You Win|song_name}
+Play song {Always|song_name}
+play {Always|song_name}
+Play song {Always Be My Baby|song_name}
+play {Always Be My Baby|song_name}
+Play song {Always Late (With Your Kisses)|song_name}
+play {Always Late (With Your Kisses)|song_name}
+Play song {Always Look On The Bright Side Of Life|song_name}
+play {Always Look On The Bright Side Of Life|song_name}
+Play song {Always On My Mind|song_name}
+play {Always On My Mind|song_name}
+Play song {Always Say Goodbye|song_name}
+play {Always Say Goodbye|song_name}
+Play song {Always Something There To Remind Me|song_name}
+play {Always Something There To Remind Me|song_name}
+Play song {Am I Blue?|song_name}
+play {Am I Blue?|song_name}
+Play song {Amanda|song_name}
+play {Amanda|song_name}
+Play song {Amarillo By Morning|song_name}
+play {Amarillo By Morning|song_name}
+Play song {Amelia|song_name}
+play {Amelia|song_name}
+Play song {America|song_name}
+play {America|song_name}
+Play song {America Without Tears|song_name}
+play {America Without Tears|song_name}
+Play song {American Girl|song_name}
+play {American Girl|song_name}
+Play song {American In Paris  An|song_name}
+play {American In Paris  An|song_name}
+Play song {American Pie|song_name}
+play {American Pie|song_name}
+Play song {American Tune|song_name}
+play {American Tune|song_name}
+Play song {American Woman|song_name}
+play {American Woman|song_name}
+Play song {AmeriKKKa's Most Wanted|song_name}
+play {AmeriKKKa's Most Wanted|song_name}
+Play song {Among My Souvenirs|song_name}
+play {Among My Souvenirs|song_name}
+Play song {Amsterdam|song_name}
+play {Amsterdam|song_name}
+Play song {Anarchy In The UK|song_name}
+play {Anarchy In The UK|song_name}
+Play song {Anasthasia|song_name}
+play {Anasthasia|song_name}
+Play song {Anchorage|song_name}
+play {Anchorage|song_name}
+Play song {Anchors Aweigh|song_name}
+play {Anchors Aweigh|song_name}
+Play song {And All That Jazz|song_name}
+play {And All That Jazz|song_name}
+Play song {And Her Tears Flowed Like Wine|song_name}
+play {And Her Tears Flowed Like Wine|song_name}
+Play song {And If Venice Is Sinking|song_name}
+play {And If Venice Is Sinking|song_name}
+Play song {And The Angels Swing|song_name}
+play {And The Angels Swing|song_name}
+Play song {And The Band Played Waltzing Matilda|song_name}
+play {And The Band Played Waltzing Matilda|song_name}
+Play song {And The Green Grass Grew All Around|song_name}
+play {And The Green Grass Grew All Around|song_name}
+Play song {And When I Die|song_name}
+play {And When I Die|song_name}
+Play song {Androgynous|song_name}
+play {Androgynous|song_name}
+Play song {Angel|song_name}
+play {Angel|song_name}
+Play song {Angel Eyes|song_name}
+play {Angel Eyes|song_name}
+Play song {Angel Flying Too Close To The Ground|song_name}
+play {Angel Flying Too Close To The Ground|song_name}
+Play song {Angel From Montgomery|song_name}
+play {Angel From Montgomery|song_name}
+Play song {Angel In Manhattan|song_name}
+play {Angel In Manhattan|song_name}
+Play song {Angel Of Death  The|song_name}
+play {Angel Of Death  The|song_name}
+Play song {Angel Of The Morning|song_name}
+play {Angel Of The Morning|song_name}
+Play song {Angels|song_name}
+play {Angels|song_name}
+Play song {Angi|song_name}
+play {Angi|song_name}
+Play song {Angie|song_name}
+play {Angie|song_name}
+Play song {Anniversary Song  The|song_name}
+play {Anniversary Song  The|song_name}
+Play song {Anniversary Song  The|song_name}
+play {Anniversary Song  The|song_name}
+Play song {Another Brick In The Wall (Part 2)|song_name}
+play {Another Brick In The Wall (Part 2)|song_name}
+Play song {Another One Bites The Dust|song_name}
+play {Another One Bites The Dust|song_name}
+Play song {Another Sad Love Song|song_name}
+play {Another Sad Love Song|song_name}
+Play song {Another Saturday Night|song_name}
+play {Another Saturday Night|song_name}
+Play song {Another World|song_name}
+play {Another World|song_name}
+Play song {Answer Me  My Love|song_name}
+play {Answer Me  My Love|song_name}
+Play song {Answering Machine|song_name}
+play {Answering Machine|song_name}
+Play song {Anthem|song_name}
+play {Anthem|song_name}
+Play song {Anthropology|song_name}
+play {Anthropology|song_name}
+Play song {Any Old Time|song_name}
+play {Any Old Time|song_name}
+Play song {Any Old Time|song_name}
+play {Any Old Time|song_name}
+Play song {Any Place I Hang My Hat Is Home|song_name}
+play {Any Place I Hang My Hat Is Home|song_name}
+Play song {Any Time|song_name}
+play {Any Time|song_name}
+Play song {Anyone Who Had A Heart|song_name}
+play {Anyone Who Had A Heart|song_name}
+Play song {Anything Goes|song_name}
+play {Anything Goes|song_name}
+Play song {Anything You Can Do|song_name}
+play {Anything You Can Do|song_name}
+Play song {Apache|song_name}
+play {Apache|song_name}
+Play song {Apache|song_name}
+play {Apache|song_name}
+Play song {Appletree|song_name}
+play {Appletree|song_name}
+Play song {April Fools|song_name}
+play {April Fools|song_name}
+Play song {April In Paris|song_name}
+play {April In Paris|song_name}
+Play song {April Kisses|song_name}
+play {April Kisses|song_name}
+Play song {April Showers|song_name}
+play {April Showers|song_name}
+Play song {Aqua Boogie (A Psychoalphadisco-betabioaquadoloop)|song_name}
+play {Aqua Boogie (A Psychoalphadisco-betabioaquadoloop)|song_name}
+Play song {Aquarius|song_name}
+play {Aquarius|song_name}
+Play song {Aquemini|song_name}
+play {Aquemini|song_name}
+Play song {Are You Gonna Go My Way?|song_name}
+play {Are You Gonna Go My Way?|song_name}
+Play song {Are You Lonesome Tonight?|song_name}
+play {Are You Lonesome Tonight?|song_name}
+Play song {Arkansas Road Blues|song_name}
+play {Arkansas Road Blues|song_name}
+Play song {Around The World|song_name}
+play {Around The World|song_name}
+Play song {Artistry In Rhythm|song_name}
+play {Artistry In Rhythm|song_name}
+Play song {As Soon As I Find My Shoes  I'm Gone|song_name}
+play {As Soon As I Find My Shoes  I'm Gone|song_name}
+Play song {As Tears Go By|song_name}
+play {As Tears Go By|song_name}
+Play song {As The World Turns|song_name}
+play {As The World Turns|song_name}
+Play song {As The Years Go Passing By|song_name}
+play {As The Years Go Passing By|song_name}
+Play song {As Time Goes By|song_name}
+play {As Time Goes By|song_name}
+Play song {Ascension (Don't Ever Wonder)|song_name}
+play {Ascension (Don't Ever Wonder)|song_name}
+Play song {Ask The Angels|song_name}
+play {Ask The Angels|song_name}
+Play song {Astral Weeks|song_name}
+play {Astral Weeks|song_name}
+Play song {Astronomy Domine|song_name}
+play {Astronomy Domine|song_name}
+Play song {At Last|song_name}
+play {At Last|song_name}
+Play song {At Les|song_name}
+play {At Les|song_name}
+Play song {At Seventeen|song_name}
+play {At Seventeen|song_name}
+Play song {At The Chime Of A City Clock|song_name}
+play {At The Chime Of A City Clock|song_name}
+Play song {A-Tisket  A-Tasket|song_name}
+play {A-Tisket  A-Tasket|song_name}
+Play song {Atomic Dog|song_name}
+play {Atomic Dog|song_name}
+Play song {Atomic Moog|song_name}
+play {Atomic Moog|song_name}
+Play song {Attica Blues|song_name}
+play {Attica Blues|song_name}
+Play song {Auctioneer  The|song_name}
+play {Auctioneer  The|song_name}
+Play song {Auf Wiedersehn|song_name}
+play {Auf Wiedersehn|song_name}
+Play song {Aural Prostitution|song_name}
+play {Aural Prostitution|song_name}
+Play song {Autobahn|song_name}
+play {Autobahn|song_name}
+Play song {Autumn In New York|song_name}
+play {Autumn In New York|song_name}
+Play song {Autumn Leaves|song_name}
+play {Autumn Leaves|song_name}
+Play song {Avalon|song_name}
+play {Avalon|song_name}
+Play song {Avalon|song_name}
+play {Avalon|song_name}
+Play song {Avalon Blues|song_name}
+play {Avalon Blues|song_name}
+Play song {Avon|song_name}
+play {Avon|song_name}
+Play song {Award Tour|song_name}
+play {Award Tour|song_name}
+Play song {Away Down In The Alley Blues|song_name}
+play {Away Down In The Alley Blues|song_name}
+Play song {Ay-te Te Fee|song_name}
+play {Ay-te Te Fee|song_name}
+Play song {B (Song Title)|song_name}
+play {B (Song Title)|song_name}
+Play song {Baba O'Riley|song_name}
+play {Baba O'Riley|song_name}
+Play song {Babbitt And The Bromide  The|song_name}
+play {Babbitt And The Bromide  The|song_name}
+Play song {Babe I'm Gonna Leave You|song_name}
+play {Babe I'm Gonna Leave You|song_name}
+Play song {Baby Face|song_name}
+play {Baby Face|song_name}
+Play song {Baby Got Back|song_name}
+play {Baby Got Back|song_name}
+Play song {Baby I Need Your Loving|song_name}
+play {Baby I Need Your Loving|song_name}
+Play song {Baby I'm Yours|song_name}
+play {Baby I'm Yours|song_name}
+Play song {Baby Love|song_name}
+play {Baby Love|song_name}
+Play song {Baby Luv|song_name}
+play {Baby Luv|song_name}
+Play song {Baby Please Don't Go|song_name}
+play {Baby Please Don't Go|song_name}
+Play song {Baby Wants To Ride|song_name}
+play {Baby Wants To Ride|song_name}
+Play song {Baby What You Want Me To Do|song_name}
+play {Baby What You Want Me To Do|song_name}
+Play song {Baby  It's Cold Outside|song_name}
+play {Baby  It's Cold Outside|song_name}
+Play song {Baby  Let Me Follow You Down|song_name}
+play {Baby  Let Me Follow You Down|song_name}
+Play song {Baby  Scratch My Back|song_name}
+play {Baby  Scratch My Back|song_name}
+Play song {Babylon|song_name}
+play {Babylon|song_name}
+Play song {Babylon Burning|song_name}
+play {Babylon Burning|song_name}
+Play song {Babylon Falling|song_name}
+play {Babylon Falling|song_name}
+Play song {Back At The Chicken Shack|song_name}
+play {Back At The Chicken Shack|song_name}
+Play song {Back Door Man|song_name}
+play {Back Door Man|song_name}
+Play song {Back For Good|song_name}
+play {Back For Good|song_name}
+Play song {Back Home Again In Indiana|song_name}
+play {Back Home Again In Indiana|song_name}
+Play song {Back In Black|song_name}
+play {Back In Black|song_name}
+Play song {Back In The Saddle Again|song_name}
+play {Back In The Saddle Again|song_name}
+Play song {Back In The U. S. S. R.|song_name}
+play {Back In The U. S. S. R.|song_name}
+Play song {Back On The Chain Gang|song_name}
+play {Back On The Chain Gang|song_name}
+Play song {Back Stabbers  The|song_name}
+play {Back Stabbers  The|song_name}
+Play song {Back That Azz Up|song_name}
+play {Back That Azz Up|song_name}
+Play song {Back To Life|song_name}
+play {Back To Life|song_name}
+Play song {Backwater Blues|song_name}
+play {Backwater Blues|song_name}
+Play song {Bad Boys|song_name}
+play {Bad Boys|song_name}
+Play song {Bad Girls|song_name}
+play {Bad Girls|song_name}
+Play song {Bad Luck Blues|song_name}
+play {Bad Luck Blues|song_name}
+Play song {Bad Moon Rising|song_name}
+play {Bad Moon Rising|song_name}
+Play song {Bad To The Bone|song_name}
+play {Bad To The Bone|song_name}
+Play song {Bad  Bad Leroy Brown|song_name}
+play {Bad  Bad Leroy Brown|song_name}
+Play song {Bali Ha'i|song_name}
+play {Bali Ha'i|song_name}
+Play song {Ball And Chain|song_name}
+play {Ball And Chain|song_name}
+Play song {Ballad Of A Teenage Queen|song_name}
+play {Ballad Of A Teenage Queen|song_name}
+Play song {Ballad Of A Thin Man|song_name}
+play {Ballad Of A Thin Man|song_name}
+Play song {Ballad Of Bonnie And Clyde  The|song_name}
+play {Ballad Of Bonnie And Clyde  The|song_name}
+Play song {Ballad Of Davy Crockett  The|song_name}
+play {Ballad Of Davy Crockett  The|song_name}
+Play song {Ballad Of El Goodo  The|song_name}
+play {Ballad Of El Goodo  The|song_name}
+Play song {Ballad Of Hollis Brown  The|song_name}
+play {Ballad Of Hollis Brown  The|song_name}
+Play song {Ballad Of Ira Hayes  The|song_name}
+play {Ballad Of Ira Hayes  The|song_name}
+play song {All star|song_name}
+play song {rock or bust|song_name}
+play song {Summer paradise|song_name}
+play song {Hey princess|song_name}
+play song {rock or bust|song_name}
+play song {Summer paradise|song_name}
+play song {Hey princess|song_name}
+play song {All star|song_name}
+play song {Welcome to the black parade|song_name}
+play song {This is my biome|song_name}
+play song {power of love|song_name}
+play song {Above And Beyond (The Call Of Love)|song_name}
+play song {Above And Beyond (The Call Of Love)|song_name}
+play song {AC/DC Current|song_name}
+play song {AC/DC Current|song_name}
+play song {Acadian Driftwood|song_name}
+play song {Acadian Driftwood|song_name}
+play song {Ac-Cent-Tchu-Ate The Positive|song_name}
+play song {Ac-Cent-Tchu-Ate The Positive|song_name}
+play song {Accident In Paradise An|song_name}
+play song {Accident In Paradise An|song_name}
+play song {Ace Of Spades|song_name}
+play song {Ace Of Spades|song_name}
+play song {Acid Tracks|song_name}
+play song {Acid Tracks|song_name}
+play song {Acperience|song_name}
+play song {Acperience|song_name}
+play song {Acquiesce|song_name}
+play song {Acquiesce|song_name}
+play song {Across The Universe|song_name}
+play song {Across The Universe|song_name}
+play song {Act Naturally|song_name}
+play song {Act Naturally|song_name}
+play song {Action Satisfaction|song_name}
+play song {Action Satisfaction|song_name}
+play song {Addicted To Love|song_name}
+play song {Addicted To Love|song_name}
+play song {Adventures Of Grandmaster Flash On The Wheels Of Steel The|song_name}
+play song {Adventures Of Grandmaster Flash On The Wheels Of Steel The|song_name}
+play song {Africa|song_name}
+play song {Africa|song_name}
+play song {Afro Puffs|song_name}
+play song {Afro Puffs|song_name}
+play song {After Hours|song_name}
+play song {After Hours|song_name}
+play song {After Hours|song_name}
+play song {After Hours|song_name}
+play song {After Midnight|song_name}
+play song {After Midnight|song_name}
+play song {After The Gold Rush|song_name}
+play song {After The Gold Rush|song_name}
+play song {After You've Gone|song_name}
+play song {After You've Gone|song_name}
+play song {Aftermath|song_name}
+play song {Aftermath|song_name}
+play song {Against All Odds (Take A Look At Me Now)|song_name}
+play song {Against All Odds (Take A Look At Me Now)|song_name}
+play song {Agua De Beber (Water To Drink)|song_name}
+play song {Agua De Beber (Water To Drink)|song_name}
+play song {Ah! Sweet Mystery Of Life|song_name}
+play song {Ah! Sweet Mystery Of Life|song_name}
+play song {Ahead By A Century|song_name}
+play song {Ahead By A Century|song_name}
+play song {Ain't It A Shame (aka Ain't That A Shame)|song_name}
+play song {Ain't It A Shame (aka Ain't That A Shame)|song_name}
+play song {Ain't Life A Brook|song_name}
+play song {Ain't Life A Brook|song_name}
+play song {Ain't Misbehavin'|song_name}
+play song {Ain't Misbehavin'|song_name}
+play song {Ain't No Cure For Love|song_name}
+play song {Ain't No Cure For Love|song_name}
+play song {Ain't No Half Steppin'|song_name}
+play song {Ain't No Half Steppin'|song_name}
+play song {Ain't No Mountain High Enough|song_name}
+play song {Ain't No Mountain High Enough|song_name}
+play song {Ain't No Sunshine (When She's Gone)|song_name}
+play song {Ain't No Sunshine (When She's Gone)|song_name}
+play song {Ain't Nobody|song_name}
+play song {Ain't Nobody|song_name}
+play song {Ain't Nobody Here But Us Chickens|song_name}
+play song {Ain't Nobody Here But Us Chickens|song_name}
+play song {Ain't Nothin' Goin On But The Rent|song_name}
+play song {Ain't Nothin' Goin On But The Rent|song_name}
+play song {Ain't She Sweet|song_name}
+play song {Ain't She Sweet|song_name}
+play song {Ain't Talkin' 'Bout Love|song_name}
+play song {Ain't Talkin' 'Bout Love|song_name}
+play song {Ain't That Just Like A Woman|song_name}
+play song {Ain't That Just Like A Woman|song_name}
+play song {Ain't That Lonely Yet|song_name}
+play song {Ain't That Lonely Yet|song_name}
+play song {Ain't That Peculiar|song_name}
+play song {Ain't That Peculiar|song_name}
+play song {Ain't Too Proud To Beg|song_name}
+play song {Ain't Too Proud To Beg|song_name}
+play song {Ain't We Got Fun|song_name}
+play song {Ain't We Got Fun|song_name}
+play song {Air|song_name}
+play song {Air|song_name}
+play song {Air Mail Special|song_name}
+play song {Air Mail Special|song_name}
+play song {Al Capone|song_name}
+play song {Al Capone|song_name}
+play song {Alabama|song_name}
+play song {Alabama|song_name}
+play song {Alabama Jubilee|song_name}
+play song {Alabama Jubilee|song_name}
+play song {Alabama Song (Whisky Bar)|song_name}
+play song {Alabama Song (Whisky Bar)|song_name}
+play song {Alabamy Bound|song_name}
+play song {Alabamy Bound|song_name}
+play song {Albert Flasher|song_name}
+play song {Albert Flasher|song_name}
+play song {Alberta's Child|song_name}
+play song {Alberta's Child|song_name}
+play song {Alexander's Ragtime Band|song_name}
+play song {Alexander's Ragtime Band|song_name}
+play song {Alfie|song_name}
+play song {Alfie|song_name}
+play song {Alice Blue Gown|song_name}
+play song {Alice Blue Gown|song_name}
+play song {Alice's Restaurant Massacree|song_name}
+play song {Alice's Restaurant Massacree|song_name}
+play song {Alifib/Alfie|song_name}
+play song {Alifib/Alfie|song_name}
+play song {Alison|song_name}
+play song {Alison|song_name}
+play song {Alive|song_name}
+play song {Alive|song_name}
+play song {All Alone|song_name}
+play song {All Alone|song_name}
+play song {All Along The Watchtower|song_name}
+play song {All Along The Watchtower|song_name}
+play song {All Apologies|song_name}
+play song {All Apologies|song_name}
+play song {All Around The World|song_name}
+play song {All Around The World|song_name}
+play song {All Around The World|song_name}
+play song {All Around The World|song_name}
+play song {All Around The World (aka Grits Ain't Groceries)|song_name}
+play song {All Around The World (aka Grits Ain't Groceries)|song_name}
+play song {All Blues|song_name}
+play song {All Blues|song_name}
+play song {All By Myself|song_name}
+play song {All By Myself|song_name}
+play song {All Day And All Of The Night|song_name}
+play song {All Day And All Of The Night|song_name}
+play song {All I Do Is Dream Of You|song_name}
+play song {All I Do Is Dream Of You|song_name}
+play song {All I Have Is Love|song_name}
+play song {All I Have Is Love|song_name}
+play song {All I Have To Do Is Dream|song_name}
+play song {All I Have To Do Is Dream|song_name}
+play song {All I Really Want To Do|song_name}
+play song {All I Really Want To Do|song_name}
+play song {All I Wanna Do|song_name}
+play song {All I Wanna Do|song_name}
+play song {All I Want|song_name}
+play song {All I Want|song_name}
+play song {All My Ex's Live In Texas|song_name}
+play song {All My Ex's Live In Texas|song_name}
+play song {All Night Long|song_name}
+play song {All Night Long|song_name}
+play song {All Of Me|song_name}
+play song {All Of Me|song_name}
+play song {All Or Nothing At All|song_name}
+play song {All Or Nothing At All|song_name}
+play song {All Right Now|song_name}
+play song {All Right Now|song_name}
+play song {All Shook Up|song_name}
+play song {All Shook Up|song_name}
+play song {All That I Can Say|song_name}
+play song {All That I Can Say|song_name}
+play song {All The Best|song_name}
+play song {All The Best|song_name}
+play song {All The Gold In California|song_name}
+play song {All The Gold In California|song_name}
+play song {All The Lovely Ladies|song_name}
+play song {All The Lovely Ladies|song_name}
+play song {All The Things You Are|song_name}
+play song {All The Things You Are|song_name}
+play song {All The Way|song_name}
+play song {All The Way|song_name}
+play song {All The Young Dudes|song_name}
+play song {All The Young Dudes|song_name}
+play song {All Things Dull And Ugly|song_name}
+play song {All Things Dull And Ugly|song_name}
+play song {All Tomorrow's Parties|song_name}
+play song {All Tomorrow's Parties|song_name}
+play song {All You Need Is Love|song_name}
+play song {All You Need Is Love|song_name}
+play song {All Your Love|song_name}
+play song {All Your Love|song_name}
+play song {All Your Love (I Miss Loving)|song_name}
+play song {All Your Love (I Miss Loving)|song_name}
+play song {Almost Independence Day|song_name}
+play song {Almost Independence Day|song_name}
+play song {Almost Persuaded|song_name}
+play song {Almost Persuaded|song_name}
+play song {Alone And Forsaken|song_name}
+play song {Alone And Forsaken|song_name}
+play song {Along Came Betty|song_name}
+play song {Along Came Betty|song_name}
+play song {Alright|song_name}
+play song {Alright|song_name}
+play song {Alright Okay You Win|song_name}
+play song {Alright Okay You Win|song_name}
+play song {Always|song_name}
+play song {Always|song_name}
+play song {Always Be My Baby|song_name}
+play song {Always Be My Baby|song_name}
+play song {Always Late (With Your Kisses)|song_name}
+play song {Always Late (With Your Kisses)|song_name}
+play song {Always Look On The Bright Side Of Life|song_name}
+play song {Always Look On The Bright Side Of Life|song_name}
+play song {Always On My Mind|song_name}
+play song {Always On My Mind|song_name}
+play song {Always Say Goodbye|song_name}
+play song {Always Say Goodbye|song_name}
+play song {Always Something There To Remind Me|song_name}
+play song {Always Something There To Remind Me|song_name}
+play song {Am I Blue?|song_name}
+play song {Am I Blue?|song_name}
+play song {Amanda|song_name}
+play song {Amanda|song_name}
+play song {Amarillo By Morning|song_name}
+play song {Amarillo By Morning|song_name}
+play song {Amelia|song_name}
+play song {Amelia|song_name}
+play song {America|song_name}
+play song {America|song_name}
+play song {America Without Tears|song_name}
+play song {America Without Tears|song_name}
+play song {American Girl|song_name}
+play song {American Girl|song_name}
+play song {American In Paris An|song_name}
+play song {American In Paris An|song_name}
+play song {American Pie|song_name}
+play song {American Pie|song_name}
+play song {American Tune|song_name}
+play song {American Tune|song_name}
+play song {American Woman|song_name}
+play song {American Woman|song_name}
+play song {AmeriKKKa's Most Wanted|song_name}
+play song {AmeriKKKa's Most Wanted|song_name}
+play song {Among My Souvenirs|song_name}
+play song {Among My Souvenirs|song_name}
+play song {Amsterdam|song_name}
+play song {Amsterdam|song_name}
+play song {Anarchy In The UK|song_name}
+play song {Anarchy In The UK|song_name}
+play song {Anasthasia|song_name}
+play song {Anasthasia|song_name}
+play song {Anchorage|song_name}
+play song {Anchorage|song_name}
+play song {Anchors Aweigh|song_name}
+play song {Anchors Aweigh|song_name}
+play song {And All That Jazz|song_name}
+play song {And All That Jazz|song_name}
+play song {And Her Tears Flowed Like Wine|song_name}
+play song {And Her Tears Flowed Like Wine|song_name}
+play song {And If Venice Is Sinking|song_name}
+play song {And If Venice Is Sinking|song_name}
+play song {And The Angels Swing|song_name}
+play song {And The Angels Swing|song_name}
+play song {And The Band play songed Waltzing Matilda|song_name}
+play song {And The Band play songed Waltzing Matilda|song_name}
+play song {And The Green Grass Grew All Around|song_name}
+play song {And The Green Grass Grew All Around|song_name}
+play song {And When I Die|song_name}
+play song {And When I Die|song_name}
+play song {Androgynous|song_name}
+play song {Androgynous|song_name}
+play song {Angel|song_name}
+play song {Angel|song_name}
+play song {Angel Eyes|song_name}
+play song {Angel Eyes|song_name}
+play song {Angel Flying Too Close To The Ground|song_name}
+play song {Angel Flying Too Close To The Ground|song_name}
+play song {Angel From Montgomery|song_name}
+play song {Angel From Montgomery|song_name}
+play song {Angel In Manhattan|song_name}
+play song {Angel In Manhattan|song_name}
+play song {Angel Of Death The|song_name}
+play song {Angel Of Death The|song_name}
+play song {Angel Of The Morning|song_name}
+play song {Angel Of The Morning|song_name}
+play song {Angels|song_name}
+play song {Angels|song_name}
+play song {Angi|song_name}
+play song {Angi|song_name}
+play song {Angie|song_name}
+play song {Angie|song_name}
+play song {Anniversary Song The|song_name}
+play song {Anniversary Song The|song_name}
+play song {Anniversary Song The|song_name}
+play song {Anniversary Song The|song_name}
+play song {Another Brick In The Wall (Part 2)|song_name}
+play song {Another Brick In The Wall (Part 2)|song_name}
+play song {Another One Bites The Dust|song_name}
+play song {Another One Bites The Dust|song_name}
+play song {Another Sad Love Song|song_name}
+play song {Another Sad Love Song|song_name}
+play song {Another Saturday Night|song_name}
+play song {Another Saturday Night|song_name}
+play song {Another World|song_name}
+play song {Another World|song_name}
+play song {Answer Me My Love|song_name}
+play song {Answer Me My Love|song_name}
+play song {Answering Machine|song_name}
+play song {Answering Machine|song_name}
+play song {Anthem|song_name}
+play song {Anthem|song_name}
+play song {Anthropology|song_name}
+play song {Anthropology|song_name}
+play song {Any Old Time|song_name}
+play song {Any Old Time|song_name}
+play song {Any Old Time|song_name}
+play song {Any Old Time|song_name}
+play song {Any Place I Hang My Hat Is Home|song_name}
+play song {Any Place I Hang My Hat Is Home|song_name}
+play song {Any Time|song_name}
+play song {Any Time|song_name}
+play song {Anyone Who Had A Heart|song_name}
+play song {Anyone Who Had A Heart|song_name}
+play song {Anything Goes|song_name}
+play song {Anything Goes|song_name}
+play song {Anything You Can Do|song_name}
+play song {Anything You Can Do|song_name}
+play song {Apache|song_name}
+play song {Apache|song_name}
+play song {Apache|song_name}
+play song {Apache|song_name}
+play song {Appletree|song_name}
+play song {Appletree|song_name}
+play song {April Fools|song_name}
+play song {April Fools|song_name}
+play song {April In Paris|song_name}
+play song {April In Paris|song_name}
+play song {April Kisses|song_name}
+play song {April Kisses|song_name}
+play song {April Showers|song_name}
+play song {April Showers|song_name}
+play song {Aqua Boogie (A Psychoalphadisco-betabioaquadoloop)|song_name}
+play song {Aqua Boogie (A Psychoalphadisco-betabioaquadoloop)|song_name}
+play song {Aquarius|song_name}
+play song {Aquarius|song_name}
+play song {Aquemini|song_name}
+play song {Aquemini|song_name}
+play song {Are You Gonna Go My Way?|song_name}
+play song {Are You Gonna Go My Way?|song_name}
+play song {Are You Lonesome Tonight?|song_name}
+play song {Are You Lonesome Tonight?|song_name}
+play song {Arkansas Road Blues|song_name}
+play song {Arkansas Road Blues|song_name}
+play song {Around The World|song_name}
+play song {Around The World|song_name}
+play song {Artistry In Rhythm|song_name}
+play song {Artistry In Rhythm|song_name}
+play song {As Soon As I Find My Shoes I'm Gone|song_name}
+play song {As Soon As I Find My Shoes I'm Gone|song_name}
+play song {As Tears Go By|song_name}
+play song {As Tears Go By|song_name}
+play song {As The World Turns|song_name}
+play song {As The World Turns|song_name}
+play song {As The Years Go Passing By|song_name}
+play song {As The Years Go Passing By|song_name}
+play song {As Time Goes By|song_name}
+play song {As Time Goes By|song_name}
+play song {Ascension (Don't Ever Wonder)|song_name}
+play song {Ascension (Don't Ever Wonder)|song_name}
+play song {Ask The Angels|song_name}
+play song {Ask The Angels|song_name}
+play song {Astral Weeks|song_name}
+play song {Astral Weeks|song_name}
+play song {Astronomy Domine|song_name}
+play song {Astronomy Domine|song_name}
+play song {At Last|song_name}
+play song {At Last|song_name}
+play song {At Les|song_name}
+play song {At Les|song_name}
+play song {At Seventeen|song_name}
+play song {At Seventeen|song_name}
+play song {At The Chime Of A City Clock|song_name}
+play song {At The Chime Of A City Clock|song_name}
+play song {A-Tisket A-Tasket|song_name}
+play song {A-Tisket A-Tasket|song_name}
+play song {Atomic Dog|song_name}
+play song {Atomic Dog|song_name}
+play song {Atomic Moog|song_name}
+play song {Atomic Moog|song_name}
+play song {Attica Blues|song_name}
+play song {Attica Blues|song_name}
+play song {Auctioneer The|song_name}
+play song {Auctioneer The|song_name}
+play song {Auf Wiedersehn|song_name}
+play song {Auf Wiedersehn|song_name}
+play song {Aural Prostitution|song_name}
+play song {Aural Prostitution|song_name}
+play song {Autobahn|song_name}
+play song {Autobahn|song_name}
+play song {Autumn In New York|song_name}
+play song {Autumn In New York|song_name}
+play song {Autumn Leaves|song_name}
+play song {Autumn Leaves|song_name}
+play song {Avalon|song_name}
+play song {Avalon|song_name}
+play song {Avalon|song_name}
+play song {Avalon|song_name}
+play song {Avalon Blues|song_name}
+play song {Avalon Blues|song_name}
+play song {Avon|song_name}
+play song {Avon|song_name}
+play song {Award Tour|song_name}
+play song {Award Tour|song_name}
+play song {Away Down In The Alley Blues|song_name}
+play song {Away Down In The Alley Blues|song_name}
+play song {Ay-te Te Fee|song_name}
+play song {Ay-te Te Fee|song_name}
+play song {B (Song Title)|song_name}
+play song {B (Song Title)|song_name}
+play song {Baba O'Riley|song_name}
+play song {Baba O'Riley|song_name}
+play song {Babbitt And The Bromide The|song_name}
+play song {Babbitt And The Bromide The|song_name}
+play song {Babe I'm Gonna Leave You|song_name}
+play song {Babe I'm Gonna Leave You|song_name}
+play song {Baby Face|song_name}
+play song {Baby Face|song_name}
+play song {Baby Got Back|song_name}
+play song {Baby Got Back|song_name}
+play song {Baby I Need Your Loving|song_name}
+play song {Baby I Need Your Loving|song_name}
+play song {Baby I'm Yours|song_name}
+play song {Baby I'm Yours|song_name}
+play song {Baby Love|song_name}
+play song {Baby Love|song_name}
+play song {Baby Luv|song_name}
+play song {Baby Luv|song_name}
+play song {Baby Please Don't Go|song_name}
+play song {Baby Please Don't Go|song_name}
+play song {Baby Wants To Ride|song_name}
+play song {Baby Wants To Ride|song_name}
+play song {Baby What You Want Me To Do|song_name}
+play song {Baby What You Want Me To Do|song_name}
+play song {Baby It's Cold Outside|song_name}
+play song {Baby It's Cold Outside|song_name}
+play song {Baby Let Me Follow You Down|song_name}
+play song {Baby Let Me Follow You Down|song_name}
+play song {Baby Scratch My Back|song_name}
+play song {Baby Scratch My Back|song_name}
+play song {Babylon|song_name}
+play song {Babylon|song_name}
+play song {Babylon Burning|song_name}
+play song {Babylon Burning|song_name}
+play song {Babylon Falling|song_name}
+play song {Babylon Falling|song_name}
+play song {Back At The Chicken Shack|song_name}
+play song {Back At The Chicken Shack|song_name}
+play song {Back Door Man|song_name}
+play song {Back Door Man|song_name}
+play song {Back For Good|song_name}
+play song {Back For Good|song_name}
+play song {Back Home Again In Indiana|song_name}
+play song {Back Home Again In Indiana|song_name}
+play song {Back In Black|song_name}
+play song {Back In Black|song_name}
+play song {Back In The Saddle Again|song_name}
+play song {Back In The Saddle Again|song_name}
+play song {Back In The U. S. S. R.|song_name}
+play song {Back In The U. S. S. R.|song_name}
+play song {Back On The Chain Gang|song_name}
+play song {Back On The Chain Gang|song_name}
+play song {Back Stabbers The|song_name}
+play song {Back Stabbers The|song_name}
+play song {Back That Azz Up|song_name}
+play song {Back That Azz Up|song_name}
+play song {Back To Life|song_name}
+play song {Back To Life|song_name}
+play song {Backwater Blues|song_name}
+play song {Backwater Blues|song_name}
+play song {Bad Boys|song_name}
+play song {Bad Boys|song_name}
+play song {Bad Girls|song_name}
+play song {Bad Girls|song_name}
+play song {Bad Luck Blues|song_name}
+play song {Bad Luck Blues|song_name}
+play song {Bad Moon Rising|song_name}
+play song {Bad Moon Rising|song_name}
+play song {Bad To The Bone|song_name}
+play song {Bad To The Bone|song_name}
+play song {Bad Bad Leroy Brown|song_name}
+play song {Bad Bad Leroy Brown|song_name}
+play song {Bali Ha'i|song_name}
+play song {Bali Ha'i|song_name}
+play song {Ball And Chain|song_name}
+play song {Ball And Chain|song_name}
+play song {Ballad Of A Teenage Queen|song_name}
+play song {Ballad Of A Teenage Queen|song_name}
+play song {Ballad Of A Thin Man|song_name}
+play song {Ballad Of A Thin Man|song_name}
+play song {Ballad Of Bonnie And Clyde The|song_name}
+play song {Ballad Of Bonnie And Clyde The|song_name}
+play song {Ballad Of Davy Crockett The|song_name}
+play song {Ballad Of Davy Crockett The|song_name}
+play song {Ballad Of El Goodo The|song_name}
+play song {Ballad Of El Goodo The|song_name}
+play song {Ballad Of Hollis Brown The|song_name}
+play song {Ballad Of Hollis Brown The|song_name}
+play song {Ballad Of Ira Hayes The|song_name}
+play song {Ballad Of Ira Hayes The|song_name}
