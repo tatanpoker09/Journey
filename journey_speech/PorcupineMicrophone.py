@@ -1,9 +1,7 @@
-import argparse
 import time
 
 from dotenv import load_dotenv
 
-import SpeechToText
 import request_interface
 
 load_dotenv()
@@ -15,6 +13,13 @@ from threading import Thread
 
 import pvporcupine
 from pvrecorder import PvRecorder
+import SpeechRecognition
+import TextToSpeech
+
+client = TextToSpeech.create_client()
+
+MODELS_PATH = "porcupine_models" + os.sep + "linux" + os.sep
+KEYWORD_PATHS = [MODELS_PATH + "yo-journey.ppn", MODELS_PATH + "hey-journey.ppn"]
 
 
 class PorcupineDemo(Thread):
@@ -47,6 +52,7 @@ class PorcupineDemo(Thread):
          occurrences of the wake word(s). It prints the time of detection for each occurrence and the wake word.
          """
 
+        global client
         keywords = list()
         for x in self._keyword_paths:
             keyword_phrase_part = os.path.basename(x).replace('.ppn', '').split('_')
@@ -92,7 +98,7 @@ class PorcupineDemo(Thread):
                         print('[%s] Detected %s' % (str(datetime.now()), keywords[result]))
                         recorder.stop()
                         start = time.time()
-                        response = SpeechToText.main()
+                        response = SpeechRecognition.start_recognition()
                         print("Received: " + response)
                         mid1 = time.time()
                         response = request_interface.nlp_process(response)
@@ -100,23 +106,23 @@ class PorcupineDemo(Thread):
                         print(response)
                         intent = response['request']['intent']
                         mid2 = time.time()
+                        if not client:
+                            client = TextToSpeech.create_client()
+                        response_phrase = response["directives"][0]['payload']['text']
+                        print("Responding with", response_phrase)
+                        TextToSpeech.create_speech(response_phrase, client)
+                        TextToSpeech.play_speech()
                         response2 = request_interface.send_response_to_backend(response)
                         end = time.time()
                         print(end - start, mid1 - start, mid2 - mid1, end - mid2)
                         print(response)
+
                         recorder.start()
                         sleep_delta = self.sleep_delta
                 else:
                     sleep_delta = max(sleep_delta - time.time(), 0)
 
         except pvporcupine.PorcupineInvalidArgumentError as e:
-            print("One or more arguments provided to Porcupine is invalid: {\n" +
-                  f"\t{self._access_key=}\n" +
-                  f"\t{self._library_path=}\n" +
-                  f"\t{self._model_path=}\n" +
-                  f"\t{self._keyword_paths=}\n" +
-                  f"\t{self._sensitivities=}\n" +
-                  "}")
             print(f"If all other arguments seem valid, ensure that '{self._access_key}' is a valid AccessKey")
             raise e
         except pvporcupine.PorcupineActivationError as e:
@@ -156,15 +162,23 @@ class PorcupineDemo(Thread):
 
 def main():
     PorcupineDemo.show_audio_devices()
+    devices = PvRecorder.get_audio_devices()
+    index = 1
+    for device in devices:
+        if "Yeti" in device or "PulseAudio" in device:
+            index = devices.index(device)
+            break
+    print(f'Using device: {devices[index]}')
+
     access_key = os.getenv('PICOVOICE_ACCESS_KEY')
     PorcupineDemo(
         access_key=access_key,
         library_path=pvporcupine.LIBRARY_PATH,
         model_path=pvporcupine.MODEL_PATH,
-        keyword_paths=["yo-journey.ppn", "hey-journey.ppn"],
+        keyword_paths=KEYWORD_PATHS,
         sensitivities=[0.5, 0.5],
         output_path=None,
-        input_device_index=7).run()
+        input_device_index=index).run()
 
 
 if __name__ == '__main__':

@@ -3,8 +3,6 @@ package com.journey.central.journey.utils;
 import com.google.cloud.texttospeech.v1.*;
 import com.google.protobuf.ByteString;
 
-import java.io.OutputStream;
-
 public class SpeechSynthesizer {
     public static ByteString synthesizeText(String text) throws Exception {
         if(text == null || text.isEmpty()) {

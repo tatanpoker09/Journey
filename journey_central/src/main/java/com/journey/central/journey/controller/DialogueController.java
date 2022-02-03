@@ -35,7 +35,7 @@ public class DialogueController {
         dialogueService.saveDialogue(dialogue);
         //We now use the response to send to the speaker.
 
-        bluetoothService.speak(dialogue.getResponse());
+        //bluetoothService.speak(dialogue.getResponse());
         //And we finally just do whatever it should do.
 
         IntegrationTrigger trigger = new IntegrationTrigger(dialogue.getDomain(), dialogue.getIntent());

@@ -1,2 +1,3 @@
 Stop song
 stop playing
+Stop

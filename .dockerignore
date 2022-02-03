@@ -1,0 +1,9 @@
+docs/
+bin/
+venv/
+.m2/
+.idea/
+.github/
+.git/
+.gitignore
+*.md

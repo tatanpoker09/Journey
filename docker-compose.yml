@@ -1,11 +1,16 @@
-version: '3.8'
+version: '3.3'
+
 services:
   backend:
+    build: 
+      context: ./
+      dockerfile: ./journey_central/Dockerfile
     container_name: journey_central
     restart: on-failure
-    build: ./journey_central
     ports:
       - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
+      - 2375:2375
+      - 2376:2376
     environment:
       SPRING_APPLICATION_JSON: '{
         "spring.datasource.url"  : "jdbc:mysql://journey_database:$MYSQLDB_DOCKER_PORT/$MYSQLDB_DATABASE?useSSL=false",
@@ -14,12 +19,18 @@ services:
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
         }'
+      GOOGLE_APPLICATION_CREDENTIALS: "treeassistant-tatan.json"
     tty: true
     stdin_open: true
     volumes:
       - .m2:/root/.m2
+      - journey_nlp_domains:/usr/journey_core_nlp/domains/
+      - journey_nlp_entities:/usr/journey_core_nlp/entities/
+      - journey_nlp_data:/usr/journey_core_nlp/data/
     depends_on:
       - journey_database
+    
+    command: "sh test.sh"
   journey_database:
     #container_name: journey_central_db
     restart: unless-stopped
@@ -35,9 +46,35 @@ services:
       - ./init.sql:/var/lib/mysql_journey/init.sql
   journey_nlp:
     build: ./journey_core_nlp
+    volumes:
+      - journey_nlp_domains:/root/journey_nlp/domains/
+      - journey_nlp_entities:/root/journey_nlp/entities/
+      - journey_nlp_data:/root/journey_nlp/data/
     ports:
       - 7150:7150
+  journeyintegrations:
+    build:
+      context: ./
+      dockerfile: ./journey_integrations_executer/Dockerfile
+    environment:
+      PULSE_SERVER: /mnt/wslg/PulseServer
+    ports:
+      - 9090:9090
+    volumes:
+      - /mnt/wslg/:/mnt/wslg/
+  journey_speech:
+    build: ./journey_speech
+    environment:
+      PULSE_SERVER: /mnt/wslg/PulseServer
+      GOOGLE_APPLICATION_CREDENTIALS: "treeassistant-tatan.json"
+
+    volumes:
+      - /mnt/wslg/:/mnt/wslg/
+
+    
 
 volumes:
   my-db:
-  data01:
+  journey_nlp_domains:
+  journey_nlp_entities:
+  journey_nlp_data:

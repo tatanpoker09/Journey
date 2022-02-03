@@ -12,7 +12,6 @@ public class Integration {
     private File filePath;
     private IntegrationConfig integrationConfig;
     private Map<IntegrationTrigger, IntegrationMethod> methods; //map from domain:intent to method.
-    private Map<IntegrationTrigger, IntegrationMethod> methodDestroyers;
 
     Logger logger = LoggerFactory.getLogger(Integration.class);
 
@@ -29,18 +28,10 @@ public class Integration {
         if( methods == null) {
             methods = new HashMap<>();
         }
-        if( methodDestroyers == null) {
-            methodDestroyers = new HashMap<>();
-        }
         for (IntegrationMethod integrationMethod : integrationMethods) {
             logger.info("Found method: "+integrationMethod.getFileName()+" "+integrationMethod.getParameters());
             for (IntegrationTrigger integrationTrigger : integrationMethod.getTriggers()) {
                 methods.put(integrationTrigger, integrationMethod);
-            }
-            if(integrationMethod.getDestroyTriggers()!=null) {
-                for (IntegrationTrigger integrationTrigger : integrationMethod.getDestroyTriggers()) {
-                    methodDestroyers.put(integrationTrigger, integrationMethod);
-                }
             }
         }
     }
@@ -65,11 +56,6 @@ public class Integration {
         IntegrationMethod integrationMethod = methods.get(trigger);
         if(integrationMethod != null) {
             integrationMethod.execute(entities, pythonConnector);
-        } else {
-            IntegrationMethod integrationMethodDestroy = methodDestroyers.get(trigger);
-            if(integrationMethodDestroy != null) {
-                integrationMethodDestroy.destroy(entities, pythonConnector);
-            }
         }
     }
 }
