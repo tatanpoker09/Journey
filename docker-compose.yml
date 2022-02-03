@@ -19,7 +19,7 @@ services:
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
         }'
-      GOOGLE_APPLICATION_CREDENTIALS: "treeassistant-tatan.json"
+      GOOGLE_APPLICATION_CREDENTIALS: "google-application-credentials.json"
     tty: true
     stdin_open: true
     volumes:
@@ -66,7 +66,7 @@ services:
     build: ./journey_speech
     environment:
       PULSE_SERVER: /mnt/wslg/PulseServer
-      GOOGLE_APPLICATION_CREDENTIALS: "treeassistant-tatan.json"
+      GOOGLE_APPLICATION_CREDENTIALS: "google-application-credentials.json"
 
     volumes:
       - /mnt/wslg/:/mnt/wslg/
