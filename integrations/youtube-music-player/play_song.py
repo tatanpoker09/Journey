@@ -1,14 +1,15 @@
+import os
+import threading
 import urllib.request
-import sys
 
 import pafy
 import vlc
 from pyyoutube import Api
-import threading
 
-api = Api(api_key="{YOUR_API_KEY}")
+api = Api(api_key=os.getenv("YOUTUBE_API_KEY"))
 
 output_devices = []
+player = None
 
 
 def search_video(keyword):
@@ -40,6 +41,7 @@ def set_output_device(player, device_name):
 
 
 def play_song(url, show_video=False):
+    global player
     video = pafy.new(url)
     best = video.getbest()
     playurl = best.url
@@ -68,11 +70,15 @@ def play_song(url, show_video=False):
     player.stop()
 
 
-song_name = sys.argv[1]
-show_video = sys.argv[2] == "true" or sys.argv[2] == "True"
-print("Song name: {}".format(song_name))
-print("Show video: {}".format(show_video))
-if song_name:
+def play(song_name, show_video=False):
+    show_video = show_video == "True" or show_video == "true"
+    print("Song name: {}".format(song_name))
+    print("Show video: {}".format(show_video))
     url = search_video(song_name)
     thread = threading.Thread(target=play_song, args=(url, show_video))
     thread.start()
+
+
+def stop():
+    global player
+    player.stop()

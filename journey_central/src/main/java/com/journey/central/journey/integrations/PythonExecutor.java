@@ -1,69 +1,70 @@
 package com.journey.central.journey.integrations;
 
-import org.python.util.PythonInterpreter;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
+import java.util.HashMap;
 import java.util.List;
-import java.util.Properties;
 
 public class PythonExecutor extends NotifyingThread{
-    private List<String> command;
-    private File file;
-    private Process process;
+    private final IntegrationMethod integrationMethod;
+    private List<String> parameters;
 
-    private static final ExecutionType EXECUTION_TYPE = ExecutionType.JYTHON;
 
-    public PythonExecutor(List<String> command){
-        this.command = command;
-    }
-
-    public PythonExecutor(File file) {
-        this.file = file;
+    public PythonExecutor(IntegrationMethod integrationMethod, List<String> parameters){
+        this.integrationMethod = integrationMethod;
+        this.parameters = parameters;
     }
 
     @Override
     public void doRun() {
-        switch (EXECUTION_TYPE){
-            case SUBPROCESS:
-                runSubprocess();
-                break;
-            case JYTHON:
-                runJython();
-                break;
-        }
-    }
-
-    private void runJython() {
-        PythonInterpreter interpreter = new PythonInterpreter();
-        Properties p = new Properties();
-        PythonInterpreter.initialize(System.getProperties(), p, new String[]{ "Foo", "Bar" });
-        interpreter.execfile(file.getAbsolutePath());
-    }
-
-    public void runSubprocess(){
+        //Send post request to python executor service.
+        //For now we simulate it.
+        Logger logger = LoggerFactory.getLogger(Integration.class);
+        logger.info("PythonExecutor: Sending post request to python executor service.");
+        logger.info("PythonExecutor: {} {}", integrationMethod.getMethodName(), parameters);
+        HttpClient client = HttpClient.newHttpClient();
         try {
-            ProcessBuilder builder = new ProcessBuilder(command);
-            process = builder.start();
-            BufferedReader stdInput = new BufferedReader(new
-                    InputStreamReader(process.getInputStream()));
-            String s;
-            while ((s = stdInput.readLine()) != null) {
-                System.out.println(s);
-            }
-        } catch (IOException e) {
+            var objectMapper = new ObjectMapper();
+            HashMap<String, Object> values = new HashMap<>() {{
+                put("script_name", integrationMethod.getFileName());
+                put("script_arguments", "[]");
+            }};
+
+            String requestBody = objectMapper
+                    .writerWithDefaultPrettyPrinter()
+                    .writeValueAsString(values);
+
+            HttpRequest request = HttpRequest.newBuilder(URI.create("http://journeyintegrations:9090/script"))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+                    .build();
+            client.send(request, HttpResponse.BodyHandlers.ofString());
+            values = new HashMap<>() {{
+                put("method_name", integrationMethod.getMethodName());
+                put("method_arguments", parameters);
+            }};
+            requestBody = objectMapper
+                    .writerWithDefaultPrettyPrinter()
+                    .writeValueAsString(values);
+
+            request = HttpRequest.newBuilder()
+                    .uri(URI.create("http://journeyintegrations:9090/method"))
+                    .header("Content-Type", "application/json")
+                    .POST(HttpRequest.BodyPublishers.ofString(requestBody))
+                    .build();
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+
+
     }
 
-    public Process getProcess() {
-        return process;
-    }
-}
-
-enum ExecutionType {
-    SUBPROCESS,
-    JYTHON;
 }

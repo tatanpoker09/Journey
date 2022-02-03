@@ -1,11 +1,9 @@
 from __future__ import division
 
-import re
 import sys
 
-from google.cloud import speech
-
 import pyaudio
+from google.cloud import speech
 from six.moves import queue
 
 # Audio recording parameters

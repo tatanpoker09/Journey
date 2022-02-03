@@ -1,0 +1,8 @@
+python-dotenv
+requests
+google-cloud-texttospeech
+picovoice
+pyaudio
+pvrecorder
+SpeechRecognition
+pydub

@@ -14,9 +14,6 @@ public class IntegrationMethod {
     @NotNull
     private List<IntegrationTrigger> triggers;
 
-    @JsonProperty("destroy_triggers")
-    private List<IntegrationTrigger> destroyTriggers;
-
     private List<String> entities;
     private List<String> parameters;
 
@@ -24,15 +21,12 @@ public class IntegrationMethod {
     @JsonProperty("file_name")
     private String fileName;
 
+    @JsonProperty("method_name")
+    private String methodName;
+
     public void execute(Map<String, String> entities, PythonConnector pythonConnector) {
         if (pythonConnector != null) {
             pythonConnector.execute(this, entities);
-        }
-    }
-
-    public void destroy(Map<String, String> entities, PythonConnector pythonConnector) {
-        if (pythonConnector != null) {
-            pythonConnector.destroy(this, entities);
         }
     }
 }

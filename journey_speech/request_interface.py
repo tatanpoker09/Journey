@@ -1,8 +1,8 @@
 import requests
 import json
 
-nlp_url = "http://localhost:7150/parse"
-backend_url = "http://localhost:8080/dialogue/"
+nlp_url = "http://journey_nlp:7150/parse"
+backend_url = "http://backend:8080/dialogue/"
 
 
 def nlp_process(message_text):

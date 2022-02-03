@@ -6,13 +6,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.util.FileCopyUtils;
 
 import javax.annotation.PostConstruct;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -39,7 +37,13 @@ public class IntegrationManager {
     @PostConstruct
     public void loadIntegrations(){
         integrations = new ArrayList<>();
+        File scriptsFolder = new File(SCRIPTS_FOLDER);
+        if(!scriptsFolder.exists()){
+            logger.info("Creating scripts folder: " + scriptsFolder.getAbsolutePath());
+            scriptsFolder.mkdir();
+        }
         File integrationFolder = new File(INTEGRATION_FOLDER);
+        logger.info("Loading integrations from path "+ integrationFolder.getAbsolutePath());
         if (!integrationFolder.exists()){
             logger.info("Integration folder does not exist");
             integrationFolder.mkdir();

@@ -1,5 +1,6 @@
 FROM ubuntu:20.04
 
+WORKDIR /root/journey_nlp/
 ENV ES_PKG_NAME elasticsearch-7.8.0-linux-x86_64
 ENV ES_FOLDER_NAME elasticsearch-7.8.0
 
@@ -41,9 +42,8 @@ RUN chown -R mindmeld:mindmeld /elasticsearch /data /var/log
 
 
 # Add Config Files
-COPY ./${ES_FOLDER_NAME}/config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+#COPY ./${ES_FOLDER_NAME}/config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
-WORKDIR /root
 COPY requirements.txt requirements.txt
 
 RUN curl -o /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
@@ -54,8 +54,9 @@ RUN echo alias python=python3  >> /root/.bashrc
 RUN echo alias pip=pip3  >> /root/.bashrc
 
 RUN pip3 install --upgrade pip
+RUN pip3 install -U numpy
+RUN pip3 install -U scipy
 RUN pip3 install -U spacy mindmeld
-RUN pip3 install -r requirements.txt
 RUN pip3 install click-log==0.1.8
 
 RUN export LC_ALL=C.UTF-8 && \
@@ -69,7 +70,6 @@ RUN export LC_ALL=C.UTF-8 && \
 EXPOSE 9200
 EXPOSE 9300
 EXPOSE 7151
-EXPOSE 7150
 COPY . .
 
 ENTRYPOINT export LC_ALL=C.UTF-8 && \

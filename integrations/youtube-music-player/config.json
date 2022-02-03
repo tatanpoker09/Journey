@@ -11,19 +11,10 @@
                     "intent": "play_song"
                 }
             ],
-            "destroy_triggers":[
-                {
-                    "domain": "media",
-                    "intent": "stop_song"
-                },
-                {
-                    "domain": "common",
-                    "intent": "stop_common"
-                }
-            ],
             "entities": ["song_name"],
             "parameters": ["{song_name}", "false"],
-            "file_name": "play_song.py"
+            "file_name": "play_song.py",
+            "method_name": "play"
         },
         {
             "triggers":[
@@ -34,7 +25,20 @@
             ],
             "entities": ["song_name"],
             "parameters": ["{song_name}", "true"],
-            "file_name": "play_song.py"
+            "file_name": "play_song.py",
+            "method_name": "play"
+        },
+        {
+            "triggers":[
+                {
+                    "domain": "media",
+                    "intent": "stop_song"
+                }
+            ],
+            "entities": [],
+            "parameters": [],
+            "file_name":"play_song.py",
+            "method_name":"stop"
         }
     ]
 }

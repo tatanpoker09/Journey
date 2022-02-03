@@ -1,3 +1,5 @@
-pafy
-vlc
-pyyoutube
+youtube-dl
+git+https://github.com/Cupcakus/pafy
+python-vlc
+python-youtube
+urllib3
