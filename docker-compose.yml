@@ -63,7 +63,7 @@ services:
     volumes:
       - /mnt/wslg/:/mnt/wslg/
   journey_speech:
-    build: ./journey_speech
+    build: channels/journey_speech
     environment:
       PULSE_SERVER: /mnt/wslg/PulseServer
       GOOGLE_APPLICATION_CREDENTIALS: "google-application-credentials.json"
