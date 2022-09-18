@@ -1,80 +1,99 @@
-version: '3.3'
+version: '3.9'
 
 services:
-  backend:
-    build: 
-      context: ./
-      dockerfile: ./journey_central/Dockerfile
-    container_name: journey_central
-    restart: on-failure
-    ports:
-      - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
-      - 2375:2375
-      - 2376:2376
+  zookeeper:
+    image: confluentinc/cp-zookeeper:latest
     environment:
-      SPRING_APPLICATION_JSON: '{
-        "spring.datasource.url"  : "jdbc:mysql://journey_database:$MYSQLDB_DOCKER_PORT/$MYSQLDB_DATABASE?useSSL=false",
-        "spring.datasource.username" : "$MYSQLDB_USER",
-        "spring.datasource.password" : "$MYSQLDB_ROOT_PASSWORD",
-        "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
-        "spring.jpa.hibernate.ddl-auto" : "update"
-        }'
-      GOOGLE_APPLICATION_CREDENTIALS: "google-application-credentials.json"
-    tty: true
-    stdin_open: true
-    volumes:
-      - .m2:/root/.m2
-      - journey_nlp_domains:/usr/journey_core_nlp/domains/
-      - journey_nlp_entities:/usr/journey_core_nlp/entities/
-      - journey_nlp_data:/usr/journey_core_nlp/data/
+      ZOOKEEPER_CLIENT_PORT: 2181
+      ZOOKEEPER_TICK_TIME: 2000
+    ports:
+      - "22181:2181"
+    healthcheck:
+      test: ["CMD", "nc", "-vz", "localhost", "2181"]
+      start_period: 10s
+      interval: 10s
+      timeout: 5s
+      retries: 3
+
+  kafka:
+    image: confluentinc/cp-kafka:latest
+    restart: always
     depends_on:
-      - journey_database
-    
-    command: "sh test.sh"
-  journey_database:
-    #container_name: journey_central_db
-    restart: unless-stopped
-    image: mysql:5.7
-    command: --init-file /var/lib/mysql_journey/init.sql
+      zookeeper:
+        condition: service_healthy
     ports:
-      - $MYSQLDB_LOCAL_PORT:$MYSQLDB_DOCKER_PORT
+      - "29092:9092"
     environment:
-        MYSQL_ROOT_PASSWORD: $MYSQLDB_ROOT_PASSWORD
-        MYSQL_DATABASE: $MYSQLDB_DATABASE
-    volumes:
-      - my-db:/var/lib/mysql
-      - ./init.sql:/var/lib/mysql_journey/init.sql
-  journey_nlp:
-    build: ./journey_core_nlp
-    volumes:
-      - journey_nlp_domains:/root/journey_nlp/domains/
-      - journey_nlp_entities:/root/journey_nlp/entities/
-      - journey_nlp_data:/root/journey_nlp/data/
-    ports:
-      - 7150:7150
-  journeyintegrations:
+      KAFKA_BROKER_ID: 1
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
+      KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
+      KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
+    healthcheck:
+      test: ["CMD", "nc", "-vz", "localhost", "9092"]
+      start_period: 15s
+      interval: 5s
+      timeout: 10s
+      retries: 10
+
+  journey_telegram_bot:
+    restart: always
+    depends_on:
+      kafka:
+        condition: service_healthy
+      journey_core_nlp:
+        condition: service_started
     build:
-      context: ./
-      dockerfile: ./journey_integrations_executer/Dockerfile
-    environment:
-      PULSE_SERVER: /mnt/wslg/PulseServer
+      context: ./channels/JourneyTelegramBot
+    volumes:
+      - ./channels/JourneyTelegramBot:/app
+  journey_core_nlp:
+    restart: always
+    depends_on:
+      kafka:
+        condition: service_healthy
+    build:
+      context: ./journey_core_nlp
+    volumes:
+      - ./journey_core_nlp:/app
+
+  journey_central_database:
+    restart: always
+    image: mysql/mysql-server:8.0.23
     ports:
-      - 9090:9090
-    volumes:
-      - /mnt/wslg/:/mnt/wslg/
-  journey_speech:
-    build: ./journey_speech
+      - "3306:3306"
     environment:
-      PULSE_SERVER: /mnt/wslg/PulseServer
-      GOOGLE_APPLICATION_CREDENTIALS: "google-application-credentials.json"
-
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: dev_journey
+      MYSQL_USER: Journey
+      MYSQL_PASSWORD: test_password123
+    healthcheck:
+      test: "mysqladmin ping -h 127.0.0.1 -u root --password=root"
+      timeout: 20s
+      retries: 10
     volumes:
-      - /mnt/wslg/:/mnt/wslg/
+      - journey-central-db:/var/lib/mysql_journey
+      - ./mysql-init-files:/docker-entrypoint-initdb.d
 
-    
+  journey_central:
+    restart: always
+    depends_on:
+      kafka:
+        condition: service_healthy
+      journey_central_database:
+        condition: service_started
+    build:
+      context: ./journey_central
+    volumes:
+      - ./journey_central:/workspace/app
+  telegram_sender_bot:
+    depends_on:
+      - journey_central
+    build:
+      context: ./integrations/TelegramSenderIntegration
+    volumes:
+      - ./integrations/TelegramSenderIntegration:/app
 
 volumes:
-  my-db:
-  journey_nlp_domains:
-  journey_nlp_entities:
-  journey_nlp_data:
+  journey-central-db:

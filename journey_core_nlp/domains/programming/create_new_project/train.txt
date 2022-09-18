@@ -1,6 +1,0 @@
-Create a new project
-Start a new project
-Create a project with {express|programming_language} and {React|programming_language}
-Start a project
-New project
-Create a new project in {Java|programming_language}
