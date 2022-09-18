@@ -1,16 +1,16 @@
-# actual container
-FROM amazoncorretto:17-alpine3.15-full
-ENV APP_HOME=/usr/app/
-RUN apk add gcompat
-ENV LD_PRELOAD=/lib/libgcompat.so.0
+FROM amazoncorretto:18.0.2-al2 as build
+WORKDIR /workspace/app
 
-WORKDIR $APP_HOME
-ARG JAR_FILE=build/libs/journey-0.0.1-SNAPSHOT.jar
-COPY journey_central/${JAR_FILE} ./app.jar
-COPY ./integrations ../integrations
-COPY ./journey_central/treeassistant-tatan.json ./treeassistant-tatan.json
-RUN apk add --update pulseaudio
+COPY gradle gradle
+COPY build.gradle settings.gradle gradlew ./
+COPY src src
 
+RUN ./gradlew build -x test
+RUN mkdir -p build/libs/dependency && (cd build/libs/dependency; find ../ -name "*.jar" -exec jar -xf {} \;)
 
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","app.jar"]
+FROM amazoncorretto:18.0.2-al2
+ARG DEPENDENCY=/workspace/app/build/libs/dependency
+COPY --from=build ${DEPENDENCY}/BOOT-INF/lib /app/lib
+COPY --from=build ${DEPENDENCY}/META-INF /app/META-INF
+COPY --from=build ${DEPENDENCY}/BOOT-INF/classes /app
+ENTRYPOINT ["java","-cp","app:app/lib/*","com.journey.central.JourneyApplication"]

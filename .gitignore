@@ -226,7 +226,7 @@ $RECYCLE.BIN/
 bin/
 integrations/*/.idea/
 .env
-journey_bot/.env
+channels/journey_bot/.env
 journey_central/.idea/
 journey_central/.jython_cache/
 journey_central/treeassistant-tatan.json
@@ -236,9 +236,9 @@ journey_core_nlp/.generated/
 journey_core_nlp/__pycache__/
 journey_core_nlp/elasticsearch-7.8.0/*
 */.env
-journey_speech/__pycache__/
-journey_speech/.env
-journey_speech/treeassistant-tatan.json
+channels/journey_speech/__pycache__/
+channels/journey_speech/.env
+channels/journey_speech/treeassistant-tatan.json
 lib/
 log/
 venv/
