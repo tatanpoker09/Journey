@@ -16,9 +16,6 @@ configurations {
 
 repositories {
 	mavenCentral()
-	maven {
-		url "https://packages.confluent.io/maven/"
-	}
 }
 
 dependencies {
@@ -52,7 +49,9 @@ dependencies {
 
 	// https://mvnrepository.com/artifact/commons-io/commons-io
 	implementation 'commons-io:commons-io:2.6'
-	implementation "org.springframework.kafka:spring-kafka"
+
+	// https://mvnrepository.com/artifact/org.python/jython
+	implementation 'org.python:jython-standalone:2.7.2'
 }
 
 test {

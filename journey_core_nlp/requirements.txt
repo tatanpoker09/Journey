@@ -1,1 +1,2 @@
-kafka-python
+scipy
+mindmeld==4.2.9
