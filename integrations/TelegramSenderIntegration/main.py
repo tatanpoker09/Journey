@@ -1,6 +1,9 @@
 import json
 import logging
 import threading
+
+from dotenv import load_dotenv
+from os import getenv
 from typing import TypeVar
 
 from kafka import KafkaConsumer
@@ -9,7 +12,10 @@ from telegram.ext import (
     CommandHandler,
 )
 
-updater = Updater(token='5449115559:AAGcG99ZIIITgEvR7NGBnHrFbYLnxXeJtTg', use_context=True)
+load_dotenv()
+
+token = getenv('TELEGRAM_BOT_TOKEN')
+updater = Updater(token=token, use_context=True)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 dispatcher = updater.dispatcher

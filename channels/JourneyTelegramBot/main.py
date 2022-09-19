@@ -1,4 +1,6 @@
 import logging
+from os import getenv
+
 from dotenv import load_dotenv
 from telegram.ext import (
     Updater,
@@ -14,7 +16,8 @@ url = "http://localhost:7150/parse"
 
 load_dotenv()
 
-updater = Updater(token='5617224032:AAG7RzjQ6vva7nreeOaCk6IHFBE3t9k23VA', use_context=True)
+token = getenv('TELEGRAM_BOT_TOKEN')
+updater = Updater(token=token, use_context=True)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 dispatcher = updater.dispatcher
