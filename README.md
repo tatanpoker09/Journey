@@ -2,13 +2,24 @@
 # Journey
 Journey is a NLP-Powered Developer assistant
 
-Using on the powerful Natural Language Processing library [Mindmeld](https://github.com/cisco/mindmeld), this projects aims to assist a software developer with the most powerful tools. Using a telegram bot interface, you can use Journey to easily set up the base files for your next project, based on your custom needs. This can be extended through scriptable templates.
+While the project still doesn't have an NLP engine, there are ideas on using either [Rhino](https://picovoice.ai/platform/rhino/) speech to intent or [rasa](https://rasa.com/). Contributions on any of these are welcome! 
+This projects aims to assist a people with the most powerful tools, in their day to day life. 
+Using a any possible interface, such as telegram, you can use Journey to integrate with your day-to-day utilities, even your own PC. 
+Both human input interfaces (called channels) output interfaces (called integrations) can be extended through scriptable templates in the **channels** and **integrations** folders respectively.
+
+# How to run the project?
 
 
-Planned features:
-- Speech to text using [Porcupine](https://github.com/Picovoice/porcupine) and [Vosk](https://alphacephei.com/vosk/) or other cloud solutions.
-- Visual GUI configuration through a website (configurate things like the speech to text engine, the project templates installed, the language in use or the modules installed.
-- Capabilities to order pizza through the Journey assistant
+
+
+
+## Planned features:
+- Speech to text channel using [Porcupine](https://github.com/Picovoice/porcupine) and [Vosk](https://alphacephei.com/vosk/) or other cloud solutions.
+- NLP Engine with [Rhino](https://picovoice.ai/platform/rhino/) and/or [rasa](https://rasa.com/) (customizable as to which solution is being used)
+- Visual GUI configuration through a frontend (configurate things like the speech to text engine, the project templates installed, the language in use or the modules installed).
+- An integration API to build your own integrations. 
+- A channel API to build your own channels.
+- Capabilities to order pizza(?) through the Journey assistant
 - Extend the Journey assistant for trello-management (create new cards/move them when done?)
 - Extend the Journey assistant as a music player?
 - Connect the Journey assistant to cortana
