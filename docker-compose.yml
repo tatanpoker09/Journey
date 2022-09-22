@@ -68,13 +68,14 @@ services:
       MYSQL_DATABASE: dev_journey
       MYSQL_USER: Journey
       MYSQL_PASSWORD: test_password123
+    command: --init-file /var/lib/mysql_journey/init.sql
     healthcheck:
       test: "mysqladmin ping -h 127.0.0.1 -u root --password=root"
       timeout: 20s
       retries: 10
     volumes:
       - journey-central-db:/var/lib/mysql_journey
-      - ./mysql-init-files:/docker-entrypoint-initdb.d
+      - ./init.sql:/var/lib/mysql_journey/init.sql
 
   journey_central:
     restart: always
