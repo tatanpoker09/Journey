@@ -17,8 +17,8 @@ producer = KafkaProducer(bootstrap_servers='kafka:9092', value_serializer=lambda
 def add_knowledge_base(intent, entities):
     if intent == "telegram_message":
         for entity in entities:
-            if entity['name'] == "Sweta":
-                entity['chat_id'] = "5223390622"
+            if entity['name'] == "tatanpoker09":
+                entity['chat_id'] = "5223390622" # Replace with your own
     return entities
 
 
@@ -26,9 +26,9 @@ def nlp_parser(message):
     if message.value:
         value = json.loads(message.value)
         msg = value['msg']
-        if msg == 'message telegram sweta':
+        if msg == 'message myself on telegram':
             # send kafka thing to journey_central
-            entities = [{"name": "Sweta", "type": "person"}]
+            entities = [{"name": "tatanpoker09", "type": "person"}]
             intent = "telegram_message"
             entities = add_knowledge_base(intent, entities)
             producer.send('journey_central.incoming_messages', {"msg": msg, "intent": intent, "entities": entities})
