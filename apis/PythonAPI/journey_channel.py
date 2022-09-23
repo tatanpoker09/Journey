@@ -12,6 +12,7 @@ class JourneyChannel:
     def __init__(self, name):
         self.name = name
         self.consumer = None
+        self.producer = None
         self.stop_event = threading.Event()
 
     def stop(self):
@@ -26,6 +27,9 @@ class JourneyChannel:
         self.consumer.subscribe([kafka_topic])
 
         def handler(func):
+            threading.Thread(target=handle_thread, args=func)
+
+        def handle_thread(func):
             while not self.stop_event.is_set():
                 for message in self.consumer:
                     func(message)

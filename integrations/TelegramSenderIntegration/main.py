@@ -27,6 +27,7 @@ def start(update, context):
 
 
 def send_message(bot, chat_id, message):
+    print('sending message')
     bot.send_message(chat_id=chat_id, text=message)
 
 
@@ -36,8 +37,11 @@ def handle_message(message):
         print(value)
         if value['intent'] == 'telegram_message':
             entities = value['entities']
-            chat_id = entities[0]['attributes']['chat_id']
-            send_message(updater.bot, chat_id, "We made a whole trip!")
+            if 'entity' in entities[0]:
+                entity = entities[0]['entity']
+                if 'attributes' in entity:
+                    chat_id = entity['attributes']['chat_id']
+                    send_message(updater.bot, chat_id, "We made a whole trip!")
 
 
 class UpdaterPolling(threading.Thread):

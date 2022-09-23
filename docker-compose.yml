@@ -45,9 +45,8 @@ services:
       journey_core_nlp:
         condition: service_started
     build:
-      context: ./channels/JourneyTelegramBot
-    volumes:
-      - ./channels/JourneyTelegramBot:/app
+      context: ./
+      dockerfile: ./channels/JourneyTelegramBot/Dockerfile
   journey_core_nlp:
     restart: always
     depends_on:

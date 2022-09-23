@@ -25,7 +25,11 @@ def add_knowledge_base(intent, entities):
 def nlp_parser(message):
     if message.value:
         value = json.loads(message.value)
-        msg = value['msg']
+        print(value)
+        if 'msg' in value:
+            msg = value['msg']
+        elif 'message' in value:
+            msg = value['message']
         if msg == 'message myself on telegram':
             # send kafka thing to journey_central
             entities = [{"name": "tatanpoker09", "type": "person"}]
