@@ -76,6 +76,8 @@ class Consumer(threading.Thread):
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 print("creating consumer")
+
+
 consumer = Consumer()
 consumer.start()
 poller = UpdaterPolling()

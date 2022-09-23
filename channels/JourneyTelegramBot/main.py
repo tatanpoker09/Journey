@@ -2,38 +2,37 @@ import logging
 from os import getenv
 
 from dotenv import load_dotenv
-from telegram.ext import (
-    Updater,
-    CommandHandler,
-    MessageHandler,
-    CallbackContext, Filters,
-)
-from typing import TypeVar
+from telegram import Update
+from telegram.bot import RT
+from telegram.ext import MessageHandler, Filters, Updater, CommandHandler, CallbackContext
 
-import kafka_connector
+from journey_channel import JourneyChannel
 
-url = "http://localhost:7150/parse"
+channel = JourneyChannel('telegram_sender')
+
+
+@channel.on_message_received("incoming_message")
+def read_incoming_message(message):
+    print("Received message", message)
+
+
+def start(update: Update, context: CallbackContext) -> RT:
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hello, I'm Journey. What can I do for you?")
+
+
+def telegram_message_received(update: Update, context: CallbackContext) -> RT:
+    msg = update.message.text
+    context.bot.send_message(chat_id=update.effective_chat.id, text=f"Sending '{msg}' to journey_nlp over kafka.")
+    channel.send_message_to_nlp(msg)
+    return 200
+
 
 load_dotenv()
-
 token = getenv('TELEGRAM_BOT_TOKEN')
 updater = Updater(token=token, use_context=True)
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO)
 dispatcher = updater.dispatcher
-RT = TypeVar('RT')
-
-
-def start(update, context):
-    context.bot.send_message(chat_id=update.effective_chat.id, text="Hello, I'm Journey. What can I do for you?")
-
-
-def telegram_message_received(update: Updater, context: CallbackContext) -> RT:
-    msg = update.message.text
-    context.bot.send_message(chat_id=update.effective_chat.id, text=f"Sending '{msg}' to journey_nlp over kafka.")
-    kafka_connector.send('journey_nlp.incoming_messages', msg)
-    return 200
-
 
 message_handler = MessageHandler(Filters.text & (~Filters.command), telegram_message_received)
 dispatcher.add_handler(message_handler)
