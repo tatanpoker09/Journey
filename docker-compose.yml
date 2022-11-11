@@ -47,6 +47,15 @@ services:
     build:
       context: ./
       dockerfile: ./channels/JourneyTelegramBot/Dockerfile
+  rasa:
+    container_name: rasa
+    stdin_open: true
+    tty: true
+    image: khalosa/rasa-aarch64:3.2.5
+    ports:
+      - 5005:5005
+    volumes:
+      - ./journey_core_nlp:/app
   journey_core_nlp:
     restart: always
     depends_on:
@@ -56,6 +65,8 @@ services:
       context: ./journey_core_nlp
     volumes:
       - ./journey_core_nlp:/app
+    expose:
+      - 5005
 
   journey_central_database:
     restart: always

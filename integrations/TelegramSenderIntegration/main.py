@@ -21,20 +21,17 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 dispatcher = updater.dispatcher
 RT = TypeVar('RT')
 
-
 def start(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id, text="Hello, I'm the integration!")
 
 
 def send_message(bot, chat_id, message):
-    print('sending message')
     bot.send_message(chat_id=chat_id, text=message)
 
 
 def handle_message(message):
     if message.value:
         value = json.loads(message.value)
-        print(value)
         if value['intent'] == 'telegram_message':
             entities = value['entities']
             if 'entity' in entities[0]:
