@@ -32,7 +32,6 @@ def read_incoming_message(message):
                 updater.bot.send_message(chat_id=sender, text=image)
 
 
-
 def start(update: Update, context: CallbackContext) -> RT:
     return context.bot.send_message(chat_id=update.effective_chat.id, text="Hello, I'm Journey. What can I do for you?")
 
