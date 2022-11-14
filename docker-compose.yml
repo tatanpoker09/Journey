@@ -98,13 +98,13 @@ services:
       context: ./journey_central
     volumes:
       - ./journey_central:/workspace/app
-  telegram_sender_bot:
+  trello_integration:
     depends_on:
       - journey_central
     build:
-      context: ./integrations/TelegramSenderIntegration
+      context: ./integrations/trello
     volumes:
-      - ./integrations/TelegramSenderIntegration:/app
+      - ./integrations/trello:/app
 
 volumes:
   journey-central-db:
